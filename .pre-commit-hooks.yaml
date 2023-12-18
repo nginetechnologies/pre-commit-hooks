@@ -1,0 +1,6 @@
+-   id: check-clang-pragma
+    name: check-clang-pragma
+    description: 'Checks for instances of clang optimize'
+    entry: check-clang-pragma
+    language: python
+    types: [file, text, c++]
