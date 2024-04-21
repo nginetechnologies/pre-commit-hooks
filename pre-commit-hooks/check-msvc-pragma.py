@@ -11,8 +11,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     for filename in args.filenames:
         with open(filename, 'r') as file:
             for lineIndex, line in enumerate(file):
-                if "#pragma clang optimize" in line:
-                    print(f"Found clang optimization pragma in {filename} on line {lineIndex + 1}")
+                if "#pragma optimize" in line:
+                    print(f"Found MSVC optimization pragma in {filename} on line {lineIndex + 1}")
                     return 1
     
     return 0

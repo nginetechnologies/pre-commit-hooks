@@ -1,6 +1,12 @@
 -   id: check-clang-pragma
     name: check-clang-pragma
-    description: 'Checks for instances of clang optimize'
+    description: 'Checks for instances of clang deoptimization pragma'
     entry: check-clang-pragma
+    language: python
+    'types_or': [c++, c]
+-   id: check-msvc-pragma
+    name: check-msvc-pragma
+    description: 'Checks for instances of msvc deoptimization pragma'
+    entry: check-msvc-pragma
     language: python
     'types_or': [c++, c]
